@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores */
+    --dark-grey: #444242;
+    --dark-orange: #FA9401;
+    --light-orange: #FFB64E;
+    --white: #fff;
+
+    /* Fontes e tamanhos */
+    --font-default: 'Roboto', sans-serif;
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-whight-400: 400;
+    --font-whight-700: 700;
+}
+
+body {
+    background: var(--dark-grey);
+}
+
+.container {
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_idioma {
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-family: var(--font-default);
+    font-weight: var(--font-whight-400);
+    font-size: var(--font-size-12);
+}
+
+.header_idioma_item.placeholder::before {
+    content: " ";
+    position: relative;
+    background-image: url(./images/icons/brasil.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: end;
+}
+
+.header_menu_item {
+    background: var(--white);
+    width: 24px;
+    height: 4px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.header_menu_item:nth-child(2) {
+    margin: 8px 0;
+}
+
+.header_menu_item:nth-child(3) {
+    margin: -8px 0;
+}
+
+.conteudo .container,
+.conteudo_botoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo_logo img {
+    margin: 36px 0 50px;
+}
+
+.conteudo_botoes .btn {
+    padding: 15.5px 40px;
+    border: 1px solid var(--dark-orange);
+    border-radius: 50px;
+    width: 265px;
+    font-family: var(--font-default);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-whight-700);
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 15px;
+}
+
+.conteudo_botoes .btn:hover {
+    background: var(--dark-orange);
+}
+
+.conteudo_botoes .btn img {
+    margin-right: 10px;
+}
+
+.redes-sociais .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    position: fixed;
+}
+
+.redes-sociais_item {
+    text-decoration: none;
+    margin: 0 15px;
+}
